@@ -3,7 +3,8 @@ const path = require('path')
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.ts',
+    context: path.resolve(__dirname, 'src'),
+    entry: 'index.ts',
     node: {
         // fs: 'empty',
     },
